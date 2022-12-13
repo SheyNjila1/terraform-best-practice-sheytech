@@ -9,23 +9,25 @@ terraform validate
 Setp 3: 
 ```
 terraform plan -var-file dev.tfvars
-terraform plan -var-file="prod.tfvars" -var="createdby=Shey"
+terraform plan -var-file prod.tfvars
 
 ```
 Setp 4: 
 ```
-terraform apply -var-file="app.tfvars" -var="createdby=Shey"
+terraform apply -var-file dev.tfvars
+terraform apply-var-file prod.tfvars
 ```
 Setp 5: 
 ```
-terraform destroy -var-file="app.tfvars" -var="createdby=Shey"
+terraform destroy -var-file dev.tfvars
+terraform destroy -var-file prod.tfvars
 ```
 
 
 
 
 
-### Links:
+### Useful Links:
 https://github.com/WillBrock/terraform-course-examples/tree/master/workspaces
 
 https://e2esolutionarchitect.com/
