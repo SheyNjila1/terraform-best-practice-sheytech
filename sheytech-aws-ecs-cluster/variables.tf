@@ -1,6 +1,7 @@
 # Tags
 variable "project" {}
 variable "createdBy" {}
+variable "editedBy" {}
 
 # General 
 variable "aws_region" {}

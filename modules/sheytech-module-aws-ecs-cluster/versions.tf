@@ -3,15 +3,13 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.5.0"
+      version = "~> 4.5"
     }
   }
-  #backend "s3" {}
 }
 
-# provider block
-
 provider "aws" {
-  profile = var.profile
-  region  = var.aws_region
+  region = var.aws_region
+  profile = "default"
+  
 }
