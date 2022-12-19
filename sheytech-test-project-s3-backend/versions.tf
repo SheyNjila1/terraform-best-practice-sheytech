@@ -3,18 +3,19 @@ terraform {
   required_providers {
     aws = {
       source               = "hashicorp/aws"
-      version              = "~> 4.5.0"
+      version              = "~> 4.5"
     }
   }
 
   backend "s3" {
-  bucket                    = "gidolitech-backend"
+  bucket                    = "sheytech-test-states"
   key                       = "state/terraform.tf.state"
   region                    = "us-east-1"
-  dynamodb_table            = "gidoli-test-locks"
+  dynamodb_table            = "sheytech-test-locks"
+  encrypt                   = false
 #   s3_versioning             = "Enabled"
 #   enable_lifecycle_rule     = false
-  profile                   = "default"
+  # profile                   = "default"
 }
 
 }
@@ -23,5 +24,5 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = var.region
+  region = var.aws_region
 }

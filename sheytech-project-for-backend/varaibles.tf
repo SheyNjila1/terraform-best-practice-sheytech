@@ -8,7 +8,7 @@ variable "createdby" {
 variable "editedby" {
 
 }
-variable "region" {
+variable "aws_region" {
 
 }
 

@@ -3,7 +3,7 @@
 # -------------------------------------------
 
 variable "aws_region" {
-  description = "AWS infrastructure regio"
+  description = "AWS infrastructure region"
   type        = string
   default     = null
 }
