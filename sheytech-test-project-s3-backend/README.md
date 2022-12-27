@@ -8,13 +8,13 @@ terraform validate
 ```
 Setp 3: 
 ```
-terraform plan -var-file="app.tfvars" -var="createdby=Shey"
+terraform plan -var-file="app.tfvars" -var="createdby=Shey" 
 ```
 Setp 4: 
 ```
-terraform apply -var-file="app.tfvars" -var="createdby=Shey"
+terraform apply -var-file="app.tfvars" -var="createdby=Shey" --auto-approve
 ```
 Setp 5: 
 ```
-terraform destroy -var-file="app.tfvars" -var="createdby=Shey"
+terraform destroy -var-file="app.tfvars" -var="createdby=Shey" --auto-approve
 ```

@@ -38,7 +38,7 @@ variable "container_insights" {
   type        = bool
   default     = false
 }
-variable "aws_region" {}
+# variable "aws_region" {}
 
 # variable "container_insights" {
 #   description = "container insights"

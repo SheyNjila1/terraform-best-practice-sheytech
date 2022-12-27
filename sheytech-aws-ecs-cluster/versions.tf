@@ -7,11 +7,21 @@ terraform {
     }
   }
   #backend "s3" {}
+  backend "s3" {
+  bucket                    = "sheytech-test-states"
+  key                       = "state/terraform.tf.state"
+  region                    = "us-east-1"
+  dynamodb_table            = "sheytech-test-locks"
+  encrypt                   = false
+  ## s3_versioning             = "Enabled"
+  ## enable_lifecycle_rule     = false
+  profile                   = "default"
+}
 }
 
 # provider block
 
 provider "aws" {
-  profile = var.profile
-  region  = var.aws_region
+  profile                   = var.profile
+  region                    = var.aws_region
 }

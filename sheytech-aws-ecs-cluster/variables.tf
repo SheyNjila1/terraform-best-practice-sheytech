@@ -1,7 +1,6 @@
 # Tags
 variable "project" {}
-variable "createdBy" {}
-variable "editedBy" {}
+variable "createdby" {}
 
 # General 
 variable "aws_region" {}
@@ -14,5 +13,9 @@ variable "backend_dynamodb_table" {}
 
 # ECS
 variable "create_ecs_cluster" {}
-variable "ecs_cluster_name" {}
-variable "container_insights" {}
+variable "ecs_cluster_name" {
+ # default = "sheytech-cluster-dev"
+}
+variable "container_insights" {
+ # default = true
+}
