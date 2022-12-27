@@ -8,10 +8,10 @@ terraform {
   }
   #backend "s3" {}
   backend "s3" {
-  bucket                    = "sheytech-test-states"
+  bucket                    = "sheytech-test-project-states"
   key                       = "state/terraform.tf.state"
   region                    = "us-east-1"
-  dynamodb_table            = "sheytech-test-locks"
+  dynamodb_table            = "sheytech-test-project-locks"
   encrypt                   = false
   ## s3_versioning             = "Enabled"
   ## enable_lifecycle_rule     = false

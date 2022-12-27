@@ -13,9 +13,5 @@ variable "backend_dynamodb_table" {}
 
 # ECS
 variable "create_ecs_cluster" {}
-variable "ecs_cluster_name" {
- # default = "sheytech-cluster-dev"
-}
-variable "container_insights" {
- # default = true
-}
+variable "ecs_cluster_name" {}
+variable "container_insights" {}

@@ -1,11 +1,20 @@
-
-## README
-- end-to-end Solution Architect forum is contributing this as knowledge sharing. You are free to use and modify this. 
-- Please check repository https://github.com/e2eSolutionArchitect/terraform
-- We encourage you to contribute your knowledge with us and create a stronger IT community.
-- Please feel free to contract us at https://e2esolutionarchitect.com/
-
-# rename app_tfvars file name to as app.tfvars and then execute  below command
+Step 1:
+``` 
+terraform init
 ```
- terraform apply -var-file="app.tfvars" -var="createdBy=e2esa"
+Step 2: 
+```
+terraform validate
+```
+Setp 3: 
+```
+terraform plan -var-file="app.tfvars" -var="createdby=Shey Njila" 
+```
+Setp 4: 
+```
+terraform apply -var-file="app.tfvars" -var="createdby=Shey Njila" --auto-approve
+```
+Setp 5: 
+```
+terraform destroy -var-file="app.tfvars" -var="createdby=Shey Njila" --auto-approve
 ```

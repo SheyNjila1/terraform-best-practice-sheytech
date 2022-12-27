@@ -18,7 +18,7 @@ module "ecs_cluster" {
   # create_ecs_cluster         = var.create_ecs_cluster
   create_ecs_cluster         = true
   # ecs_cluster_name         = var.ecs_cluster_name
-  ecs_cluster_name           = "sheytech-cluster-dev"
+  ecs_cluster_name           = "sheytech-cluster-default"
   #container_insights        = var.container_insights
   container_insights         = false
   tags                       = local.tags
